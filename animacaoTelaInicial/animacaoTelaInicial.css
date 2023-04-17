@@ -10,12 +10,12 @@
 }
 @keyframes quad1A{
     0%{left : 1075px ; top :50%; opacity: 0%; width: 0%; height: 0%;}
-    15%{left : 1075px ; top :50%;opacity: 100%;width: 100px; height: 100px;}
-    30%{left : 0px ; top :50%;opacity: 100%;width: 100px; height: 100px;}
-    45%{left : 0px ; top :0%; opacity: 100%;width: 100px; height:100px;}
-    60%{left : 0px ; top :0%; opacity: 100%;width: 100px; height:100px;}
-    85%{left : 0% ; top :0%; opacity: 100%;width: 100%; height:100px;}
-    100%{left : 0% ; top :0%; opacity: 100%;width: 100%; height:100px;}
+    15%{left : 1075px ; top :50%;opacity: 100%;width: 100px; height: 10%;}
+    30%{left : 0px ; top :50%;opacity: 100%;width: 100px; height: 10%;}
+    45%{left : 0px ; top :0%; opacity: 100%;width: 100px; height:10%;}
+    60%{left : 0px ; top :0%; opacity: 100%;width: 100px; height:10%;}
+    85%{left : 0% ; top :0%; opacity: 100%;width: 100%; height:10%;}
+    100%{left : 0% ; top :0%; opacity: 100%;width: 100%; height:10%;}
 }
 @keyframes quad2A{
     0%{left : 1200px ; top :30%; opacity: 0%; width: 0%; height: 0%;}
@@ -48,9 +48,9 @@ body {
 }
 .texto {
     color: black;
-    font-size: 72px;
+    font-size: 50px;
     font-family: 'Quicksand', sans-serif;
-
+    font-weight: normal;
     position: relative;
     display: flex;
     left :650px;
@@ -68,8 +68,8 @@ body {
     top :50%; 
     width: 100px;
     height: 100px;
-    
-    background-color: #722620;
+    border-bottom: 5px solid #A4161A;
+    background-color: black;
     animation-name: quad1A;
     animation-duration: 5s; 
 }

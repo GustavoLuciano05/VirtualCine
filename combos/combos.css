@@ -26,7 +26,7 @@ body{
     width: 100%;
     height: 10%;
     background-color: #0B090A;
-    
+    border-bottom: 5px solid #A4161A;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -114,6 +114,31 @@ body{
     font-size: 100px;
     font-family: 'Quicksand', sans-serif;
 }
+
+.divCarrinho{
+    width: 70%;
+    position: relative;
+    height: 90%;
+    background-color: whitesmoke;
+    z-index: 2;
+}
+
+.divCarrinhoBotao{
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    border-bottom: 5px solid #A4161A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrinho{
+    width: 12.5%;
+    height: 65%;
+    background-color: white;
+}
+
 
 .rodape {
     width:100%;
@@ -221,7 +246,7 @@ h{
     justify-content: center;
     align-items: center;
     color: white;
-    
+ 
 
 }
 .rodapePreco{
