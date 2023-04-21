@@ -42,17 +42,21 @@ h2{
     color: white;
     text-align: center;
     cursor: pointer;
+    transition: 1s;
 }
 
-.txtLogo:hover{font-size: 41px;}
+.txtLogo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 .txtBotoes , .txtBotoesC{
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Cinzel', sans-serif;
     cursor: pointer;
     color: white;
     text-align: center;
-    width: 150px;
+    width: 250px;
     display: flex;
     justify-content: center;
     transition: .5s;
@@ -60,7 +64,7 @@ h2{
 }
 
 .txtBotoes:hover,.txtBotoesC:hover{
-    font-size: 22px;
+    font-size: 17.5px;
     color:  #A4161A;
 }
 
@@ -142,7 +146,7 @@ a{
 .cabecalhoMeio {
     width: 33%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
    
 }
@@ -169,7 +173,8 @@ a{
     color: white;
     display: flex;
     cursor: pointer;
-    transition: 1s;
+    position: relative;
+    transition: .5s;
    
 }
 
@@ -286,17 +291,20 @@ a{
     
     background-color: white;
     transform: translate(0%,-100%);
+    position: relative;
 }
 
-.categorias,.destaques,.combos{
+#categorias,.destaques,.combos{
     height: 100%;
     width: 25%;
     background-color: white;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transform: translate(0%,-100%);
+    transform: translate(0%,-100%); 
+    position: relative;
   
 }
 .contentAbas{

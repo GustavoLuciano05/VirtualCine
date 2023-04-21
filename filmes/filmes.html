@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Cine</title>
     <link rel="stylesheet" href="filmes.css">
-    <script src="filmes.js"></script>
+  
  
     
 </head>
-<body>
+<body onload="setaPos()">
     <div class="principal">
         <div class="cabecalho">
             
@@ -26,9 +26,9 @@
                 </div>
 
                 <div class="caixaF">
-                    <button onClick="retornarFuncao()" class="setaTras" id = seta> <</button>
+                    <button onclick="retornarFuncao('1')" class="setaTras" id = seta1> <</button>
                     
-                    <div id = "container" class="caixaFilmes">
+                    <div id = "caixaFilmes1" class="caixaFilmes">
                         <div class="filmes">
                         
                             <div class="filmesCabecalho">3D</div>
@@ -89,7 +89,7 @@
                         <div class="filmes">
                             <div class="filmesCabecalho">3D</div>
                             <div class="divFilme">
-                                <img src="../img/filmeMagnifecentBodyguards.png" class="imgFilme"> 
+                                <img src="../img/filmeMagnifecentBodyguards.png" class="imgFilme "onclick="telafilme('9');"> 
                                 <div class="rodapeFilme">
                                     <div class = "rodapeCabecalhoFilme"> Magnificent Bodyguards (1978) </div>
                                     <div class = "rodapeTextoFilme"> Magnificent Bodyguards é um filme de ação de artes marciais de Hong Kong,estrelado por Jackie Chan e dirigido por Lo Wei. </div>
@@ -99,7 +99,7 @@
                         </div>
                         
                     </div>
-                    <button onClick="translacionarFuncao()" class="setaFrente" id = seta> ></button>
+                    <button onclick="translacionarFuncao('1')" class="setaFrente" id = seta2> ></button>
                    
                 </div>
 
@@ -107,14 +107,14 @@
                     <h> Destaques </h>
                  </div>
                  <div class="caixaF">
-                    <button onClick="retornarFuncao2()" class="setaTras" id = seta2> <</button>
-                    <div id = "container2" class="caixaFilmes">
+                    <button onclick="retornarFuncao('2')" class="setaTras" id = seta3> <</button>
+                    <div id = "caixaFilmes2" class="caixaFilmes">
                     <div class="filmes">
                         
                         <div class="filmesCabecalho">3D</div>
                         <div class="divFilme">
                             
-                            <img src="../img/filmeGravity.png" class="imgFilme"> 
+                            <img src="../img/filmeGravity.png" class="imgFilme" onclick="telafilme('10');"> 
                             <div class="rodapeFilme">
                                 <div class="rodapeCabecalhoFilme"> Gravity(2013) </div>
                                 <div class="rodapeTextoFilme">Gravity é um filme de suspense de ficção científica de 2013 dirigido por Alfonso Cuarón, que também co-escreveu, co-editou e produziu o filme.</div>
@@ -127,7 +127,7 @@
                         
                         <div class="filmesCabecalho">3D</div>
                         <div class="divFilme">
-                            <img src="../img/filmeAvatar.png" class="imgFilme"> 
+                            <img src="../img/filmeAvatar.png" class="imgFilme" onclick="telafilme('11');"> 
                             <div class="rodapeFilme">
                                 <div class = "rodapeCabecalhoFilme"> Avatar (2009) </div>
                                 <div class = "rodapeTextoFilme">  Avatar é um filme épico de ficção científica estadunidense de 2009, escrito e dirigido por James Cameron </div>
@@ -141,7 +141,7 @@
                         
                         <div class="filmesCabecalho">3D</div>
                         <div class="divFilme">
-                            <img src="../img/filmeTravelToCenter.png" class="imgFilme"> 
+                            <img src="../img/filmeTravelToCenter.png" class="imgFilme" onclick="telafilme('12');"> 
                             <div class="rodapeFilme">
                                 <div class = "rodapeCabecalhoFilme"> Center of the Earth (2008) </div>
                                 <div class = "rodapeTextoFilme"> Em uma missão para descobrir o que aconteceu com seu irmão desaparecido, um cientista, seu sobrinho e seu guia de montanha descobrem um fantástico</div>
@@ -151,12 +151,11 @@
                     
                     </div>
 
-                   
                     <div class="filmes">
                         
                         <div class="filmesCabecalho">3D</div>
                         <div class="divFilme">
-                            <img src="../img/filmeGhostsOfAbyss.png" class="imgFilme"> 
+                            <img src="../img/filmeGhostsOfAbyss.png" class="imgFilme" onclick="telafilme('13');"> 
                             <div class="rodapeFilme">
                                 <div class = "rodapeCabecalhoFilme"> Ghosts Of The Abyss (2003) </div>
                                 <div class = "rodapeTextoFilme"> É um documentário lançado pela Walt Disney Pictures e Walden Media. Foi dirigido pelo diretor vencedor do Óscar James Cameron </div>
@@ -165,14 +164,10 @@
                     
                     </div>
                     
-                    
-                 
-                    
-                    
                     <div class="filmes">
                         <div class="filmesCabecalho">3D</div>
                         <div class="divFilme">
-                            <img src="../img/filmeTheWalk.png" class="imgFilme"> 
+                            <img src="../img/filmeTheWalk.png" class="imgFilme" onclick="telafilme('14');"> 
                             <div class="rodapeFilme">
                                 <div class = "rodapeCabecalhoFilme"> The Walk (2015) </div>
                                 <div class = "rodapeTextoFilme"> The Walk é um filme biográfico de ação e drama em 3D de 2015. </div>
@@ -181,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-                <button onClick="translacionarFuncao2()" class="setaFrente" id = seta2> ></button>
+                <button onclick="translacionarFuncao('2')" class="setaFrente" id = seta4> ></button>
                 </div>
 
 
@@ -192,4 +187,7 @@
        
        
 </body>
+<script src="../jquery-3.6.4.min.js"></script>
+<script src="filmes.js"></script>
+
 </html>

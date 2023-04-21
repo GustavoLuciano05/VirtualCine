@@ -1,56 +1,23 @@
-let posInicial = 0;
-let pos = 0
 
 
-function translacionarFuncao() {
-    
-     pos = pos +400;
+function translacionarFuncao(i) {
+     $('#caixaFilmes'+i).animate({ left: "-=400" },1000);
+}
 
-     document.getElementById("container").style.transform=`translateX(${pos}px)`;
-     document.getElementById("container").style.transition=" all 2s" 
-     
-   
-     }
-     
-     document.getElementById("seta").addEventListener('click', translacionarFuncao())
-     document.getElementById("seta").removeEventListener('click', translacionarFuncao())
+function retornarFuncao(i) {
+     $('#caixaFilmes'+i).animate({ left: "+=400" },1000);      
+}
 
-     function retornarFuncao() {
-          pos = pos -400;
-          document.getElementById("container").style.transform=`translateX(${pos}px)`;
-          document.getElementById("container").style.transition=" all 2s" 
-         
-          
-     }
+function voltar(){
+     window.location.href=("../telaInicial/novaTelaInicial.html");
+}
 
-     let posInicial2 = 0;
-     let pos2 = 0
-     
-     function translacionarFuncao2() {
-         
-          pos = pos +400;
-     
-          document.getElementById("container2").style.transform=`translateX(${pos}px)`;
-          document.getElementById("container2").style.transition=" all 2s" 
-          
-        
-          }
-          
-          document.getElementById("seta2").addEventListener('click', translacionarFuncao())
-          document.getElementById("seta2").removeEventListener('click', translacionarFuncao())
-     
-          function retornarFuncao2() {
-               pos = pos -400;
-               document.getElementById("container2").style.transform=`translateX(${pos}px)`;
-               document.getElementById("container2").style.transition=" all 2s" 
-              
-               
-          }
+function telafilme(i){
+     window.location.href= '../telasFilmes/telaFilmes'+i+'.html';
+}
 
-     function voltar(){
-          window.open("../telaInicial/novaTelaInicial.html");
-     }
-
-     function telafilme(i){
-            window.location.href= '../telasFilmes/telaFilmes'+i+'.html';
-      }
+function setaPos(){
+     var w = window.innerWidth *0.9;
+     document.getElementById("seta2").style.left = w+'px';
+     document.getElementById("seta4").style.left = w+'px';
+}

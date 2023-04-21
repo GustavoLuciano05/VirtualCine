@@ -16,14 +16,14 @@
         
         <div class="cabecalhoMeio">
             <!-- Categorias -->
-            <div class="cabecalhoBotoes" ><div class="txtBotoes"><span onclick="abrirTela('filmes','filmes.html');">CATEGORIAS</span></div></div>
-            <span class="flecha" onclick="mostramenucategoria();">></span>
+            <div class="cabecalhoBotoes" ><div class="txtBotoes"><div onclick="abrirTela('filmes','filmes.html');">CATEGORIAS</div></div></div>
+            <div class="flecha" id = "flecha" onclick="mostrarMenu('categorias','100%');">></div>
             <!-- Destaques -->
             <div class="cabecalhoBotoes" ><div class="txtBotoes">DESTAQUES</div></div>
-            <span class="flecha" onclick="mostramenudestaque();">></span>
+            <div class="flecha" id = "flecha" onclick="mostrarMenu('destaques','100%');">></div>
             <!-- Combos -->
-            <div class="cabecalhoBotoes"><div class="txtBotoes"><span onclick="abrirTela('combos','combos.html');" >COMBOS</span></div></div>
-            <span class="flecha" onclick="mostramenucombo();">></span>
+            <div class="cabecalhoBotoes"><div class="txtBotoes"><div onclick="abrirTela('combos','combos.html');" >COMBOS</div></div></div>
+            <div class="flecha" id = "flecha" onclick="mostrarMenu('combos','100%');">></div>
         </div>
 
         
@@ -35,7 +35,7 @@
             <div class="cabecalhoLupa">
                 <img src="../img/Lupa-branca.webp" width="30px" id="btnBusca" alt="Buscar"/>
             </div>
-            <a href="#" onclick="mostramenuperfil();"><img src="../img/Perfil.png" width=45px class="cabecalhoPerfil"></a>
+            <a href="#" onclick="mostrarMenu('perfil','62.5%');"><img src="../img/Perfil.png" width=45px class="cabecalhoPerfil"></a>
         </div>
     </div>
     <div class="containerAbaPrincipal">
@@ -85,7 +85,7 @@
             <div class="containerBotoes">
                 <div class="contentBotoes"onclick ="abrirTela('login','login.html');" id="entrar"><div class= "txtBotoesC">Entrar</div></div>
                 <div class="contentBotoes"onclick ="abrirTela('cadastro','cadastro.html');" id="cadastro"><div class= "txtBotoesC">Cadastrar-se</div></div>
-                <div class="contentBotoes"onclick ="abrirTela('assinar','assinatura.html');" id="assinar"><div class= "txtBotoesC">Assinar</div></div>
+                <div class="contentBotoes"onclick ="abrirTela('assinatura','assinatura.html');" id="assinar"><div class= "txtBotoesC">Assinar</div></div>
             </div>
         </div>
         <div class="contentMetade2">
@@ -123,5 +123,6 @@
     </div>
     <div class="d2"><img src="../img/desconto.png" width="200px"></div> 
 </body>
+    <script src="../jquery-3.6.4.min.js"></script>
     <script src="novaTelaInicial.js"> </script>
 </html>

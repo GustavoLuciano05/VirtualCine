@@ -1,5 +1,5 @@
 function voltar(){
-    window.open("../telaInicial/novaTelaInicial.html");
+    window.location.href=("../telaInicial/novaTelaInicial.html");
 }
 var i = 0
 function carrinho(){

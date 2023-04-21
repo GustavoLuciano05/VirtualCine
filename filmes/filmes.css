@@ -6,6 +6,7 @@ body,html {
     padding: 0;
     overflow-x: hidden;
     background-color: #161A1D;
+   
 }
 
 /* - Fundo principal - */
@@ -50,10 +51,12 @@ body,html {
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 
 .logoTexto:hover{
     font-size:41px;
+    
     cursor: pointer;
 }
 
@@ -63,6 +66,7 @@ body,html {
     width: 100%;
     height: 5px;
     background-color: #A4161A;
+    
 }
 
 /* Caixas organizadoras do filmes */
@@ -75,7 +79,7 @@ body,html {
     border-style: dotted;  */
     
     display: flex;
-    
+   
     justify-content: center;
 }
 
@@ -93,6 +97,7 @@ body,html {
 }
 
 .caixaTexto{
+ 
     width: 95%;
     height: 20%;
     /* border-radius: 1px;
@@ -107,7 +112,7 @@ body,html {
 }
 
 .caixaF{
-    width: 100%;
+    width: 200%;
     height: 500px;
     /* border-radius: 1px;
     border-color: red;
@@ -115,22 +120,18 @@ body,html {
     display: flex;
     justify-content: space-around; 
     align-items: center;  
-    flex-direction: row;
-    left: 50px;
-
+    
 }
 .caixaFilmes{
-    width: 100%;
+    width: 50%;
     height: 500px;
     /* border-radius: 1px;
     border-color: red;
     border-style: dotted; */
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     align-items: center;  
-    flex-direction: row;
-   
-
+    position: relative;
 }
 
 h{
@@ -234,11 +235,6 @@ h{
     z-index: 2;
     position: absolute;
    
-}
-
-.setaFrente{
-    transform: translateX(700%);
-    
 }
 .setaTras{
     transform: translateX(-2000%);
