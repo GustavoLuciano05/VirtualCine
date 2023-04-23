@@ -88,6 +88,7 @@ h2{
     font-size: 40px;
     font-family: 'Quicksand', sans-serif;
     animation: animate 1.5s linear infinite;
+    z-index: -1;
 }
 .piscar{
     font-size: larger;

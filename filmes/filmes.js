@@ -8,6 +8,10 @@ function retornarFuncao(i) {
      $('#caixaFilmes'+i).animate({ left: "+=400" },1000);      
 }
 
+     function trocarImagemNaSeleção(imageUrl){
+          $('#divisoria').css("background-image","url(" + imageUrl + ")");
+     }
+
 function voltar(){
      window.location.href=("../telaInicial/novaTelaInicial.html");
 }
