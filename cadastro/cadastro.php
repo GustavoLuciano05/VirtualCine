@@ -8,17 +8,19 @@
 </head>
 <body>
     <?php 
+        // $id = $_POST["id"];
+        $nome = $_POST["nome"];
+        $sobrenome = $_POST["sobrenome"];
+        $email = $_POST["email"];
+        $celular = $_POST["celular"];
+        $senha= $_POST["senha"];
+        $confirmarSenha= $_POST["confirmarSenha"];
         
+        $comando = $pdo->prepare("INSERT INTO cadastro(nome,sobrenome,email,celular,senha,confirmarSenha) VALUES('$id','$nome','$sobrenome','$email','$celular','$senha','$confirmarSenha')");
+
+        $resultado = $comando->execute();
         
-        $login = $_POST["login"];
-        $name = $_POST["name"];
-        $password = $_POST["password"];
-        $lastname = $_POST["lastname"];
-        
-        echo("Email = " . $email);
-        echo("Nome = " . $name);
-        echo("Senha = " . $password);
-        echo("Sobrenome = " . $lastname);
+        header("location: cadastro.html");
         
     ?>
 </body>
