@@ -23,3 +23,20 @@ function carrinho(){
      }
   
 }
+
+
+
+function trocarCategoria(id,titulo){
+   
+   $('#container'+id).css({"z-index": "1"});
+   $('#container'+id).animate({opacity: '100%'},500);
+   
+   for (let index = 0; index < 5; index++) {
+      if(index != id){
+         $('#container'+index).animate({opacity: '0%'},500);
+         $('#container'+index).css({"z-index": "-1"});
+      } 
+   }
+   document.getElementById("caixa2").innerText = titulo;
+   
+}

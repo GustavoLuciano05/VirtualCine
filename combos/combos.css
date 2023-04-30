@@ -189,7 +189,7 @@ body{
     width:100%;
     height: 75px;
     position: fixed;
-    border-top: 1px solid white;
+    
     
     background-color: #A4161A;
     bottom: 0px;
@@ -201,6 +201,7 @@ body{
     font-family: 'Quicksand', sans-serif;
     cursor: pointer;
     transition: 1s;
+    z-index: 2;
 }
 .rodape:hover{
     height: 90px;
@@ -210,8 +211,9 @@ body{
 .containerImagens{
     width: 100%;
     height: 300px;
+    opacity: 0%;
     display: flex;
-    
+    position: absolute;
     justify-content: space-around;
     align-items: center;
 }
@@ -260,8 +262,10 @@ body{
     position: absolute;
     display: flex;
     transition: 2s;
-    
-
+}
+.divDiagonal img,.divDiagonalInv img{
+    display: block;
+    transition: 2s;
 }
 
 .divDiagonalInv{
@@ -275,8 +279,15 @@ body{
     transition: 2s;
     
 }
+.divDiagonalInv:hover img{
+    transform: scale(1.2); 
+   
+}
+.divDiagonal:hover img {
+    transform: scale(1.2);
+    
+}
 .divDiagonalInv:hover,.divDiagonal:hover{
-    transform: scale(1.01);
     z-index: 1;
     clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
 }

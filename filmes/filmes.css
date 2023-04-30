@@ -166,17 +166,25 @@ h{
     width: 300px;
     height: 500px;
     display: flex;
+    overflow: hidden;
     align-items: end;
     z-index: 1;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-
 }
 
+.divFilme img{
+    display: block;
+    transition:  .2s linear;
+}
+
+.divFilme:hover img{
+    transform: scale(1.2);
+    /* transform-origin: 20% -10%; */
+}
 .imgFilme {
     z-index: -1;
     width: 300px;
-    height: inherit;
-    
+    height: inherit;    
 }
 
 .rodapeFilme{
@@ -189,9 +197,10 @@ h{
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     z-index: 1;
+    transition: 1s;
     
 }
 
@@ -205,24 +214,49 @@ h{
     justify-content: center;
     font-family: 'Quicksand', sans-serif;
     cursor: pointer;
+  
     
 }
 
 .rodapeTextoFilme{
+    height: 0px;
     display: none;
-    height: 60px;
+    align-items: center;
+   
+    height: 0px;
     width: 250px;
-    font-size: 12px;
+    font-size: 10px;
 
     color: rgb(255, 255, 255);
 }
 
 .rodapeCabecalhoFilme:hover + .rodapeTextoFilme {
     display: flex;
+   
     justify-content: center;
     text-align: center;
+    height: 30px;
 }
 
+
+
+.rodapeRodape{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2.5%;
+    
+}
+
+
+
+.rodapeRodape img{
+    display: block;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 1.5%;
+    height: 15px;
+}
 .setaFrente, .setaTras {
     width: 50px;
     height: 50px;
