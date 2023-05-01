@@ -29,12 +29,13 @@ body{
     width: 100%;
     height: 10%;
     background-color: #0B090A;
-    border-bottom: 5px solid #A4161A;
+    border-bottom: 5px solid white;
     display: flex;
     justify-content: space-around;
     text-align: center;
     
 }
+
 .cabecalhoBorda{
     width: 25%;
     height: 100%;
@@ -103,7 +104,7 @@ body{
     font-size: 30px;
     
     display: flex;
-    flex-direction: column;
+    flex-direction: dcolumn;
     box-shadow: 0px 0px 30px 5px black;
 
     font-weight: lighter;
@@ -139,20 +140,100 @@ body{
     background-color: #A4161A;
     
     width: 100%;
-    height: 500px;
-    background-image: linear-gradient(to bottom, #A4161A, #161A1D);
+    height: 750px;
+    background-image: linear-gradient(to bottom,#E5383B , #A4161A,#660708);
     display: flex;
     justify-content: center;
-    align-items: center;
-
+ 
 }
 .metadeGradiente{
+    color:white;
+    width: 55%;
+    font-size: 70px;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ 
+    
+    
+}
+
+.metadeGradienteRodape{
+    
+    
+   
+    padding: 1%;
+    margin-bottom: 1%;
+    height: 15%;
+    
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+   
+    background-color: white;
+    border-bottom: 10px solid #E5383B;
+    
+}
+.metadeGradienteRodapeTexto,.metadeGradienteRodapeTexto2{
+    width: 100%;
+    height: 40%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    color: black;
+ 
+    margin-left: 5%;
+    font-size: 80px;
+    
+}
+.metadeGradienteRodapeTexto2{
+    
+    font-size: 20PX;
+}
+
+.metadeGradienteMetade{
+    height: 100%;
+    width: 50%;
+   
+    display: flex;
+    overflow: hidden;
+}
+
+.gradienteTitulo{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-family: 'Quattrocento', serif;
+    text-transform: 5px;
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.7), transparent);
+    backdrop-filter: blur(4px);
+    font-size: 120px;
+    height: 20%;
+    width: inherit;
+
+    align-items: center;
+}
+.gradienteDescricao{
+    display: flex;
+    position: absolute;
+    top: 40%;
+    font-size: 30px;
+    border-bottom: 2px solid white;
+}
+.metadeGradiente2{
     width :45%;
    
     
     height: 100%;
     /* border: 2px solid white; */
     display: flex;
+    flex-direction: column;
+   
     justify-content: center;
     align-items: center;
     color:whitesmoke;
@@ -236,8 +317,7 @@ body{
     align-items: center;
     font-family: 'Quicksand', sans-serif;
    
-    color: #660708;
-    
+    color: #660708
 }
 .descricaoImagens{
     width: 400px;
@@ -293,6 +373,11 @@ body{
 }
 h{
     border-bottom: 2px solid #A4161A;
+}
+h2{
+    font-weight: lighter;
+    font-size: 24px;
+    
 }
 
 .rodapeImage{
