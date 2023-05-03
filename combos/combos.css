@@ -83,17 +83,18 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
    
 }
 
 .divDivisoriaMetade,.divDivisoriaMetade2{
     width: 75%;
     height: 30%;
-    
+   
     flex-direction: row;
     display: flex;
     justify-content: center;
+   
     
 }
 .divDivisoriaMetade2{
@@ -104,7 +105,7 @@ body{
     font-size: 30px;
     
     display: flex;
-    flex-direction: dcolumn;
+    flex-direction: column;
     box-shadow: 0px 0px 30px 5px black;
 
     font-weight: lighter;
@@ -117,13 +118,16 @@ body{
     height: 55%;
     
     display: flex;
-    justify-content: center;
+   
+    justify-content: space-between;
     align-items: center;
     color: white;
     margin: 1%;
+    
+
     margin-bottom: 2.5%;
     font-family: 'Quattrocento', serif;
-
+   
     font-size: 20px;
     cursor:pointer;
     transition: .1s;
@@ -131,9 +135,15 @@ body{
     border-bottom: 5px solid white ; 
     
 }
+
+.botoesDivDivisoria img{
+    border-right: 1px solid rgba(255, 255, 255, 0.5); 
+    padding: 4%;
+    
+}
+
 .botoesDivDivisoria:hover{
     border-bottom: 10px solid white ; 
-   
 }
 
 .fundoGradiente{

@@ -1,12 +1,12 @@
 <?php 
-         include("conecta.php");
+        include("conecta.php");
         $nome = $_POST["nome"];
         $sobrenome = $_POST["sobrenome"];
         $email = $_POST["email"];
-        $telefone = $_POST["telefone"];
         $senha = $_POST["senha"];
+        $confirmacaoSenha = $_POST["confirmacaoSenha"];
         
-        $comando = $pdo->prepare("INSERT INTO usuario(nome,email,telefone,senha) VALUES ('$nome', '$email','$telefone', '$senha')");
+        $comando = $pdo->prepare("INSERT INTO usuario(nome,sobrenome,email,senha,confirmacaoSenha) VALUES ('$nome','$sobrenome', '$email','$senha', '$confirmacaoSenha')");
 
         $resultado = $comando->execute();
         
