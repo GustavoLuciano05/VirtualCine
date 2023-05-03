@@ -1,6 +1,7 @@
 <?php 
          include("conecta.php");
         $nome = $_POST["nome"];
+        $sobrenome = $_POST["sobrenome"];
         $email = $_POST["email"];
         $telefone = $_POST["telefone"];
         $senha = $_POST["senha"];
