@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,10 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="recuperação.css">
     <title>Login</title>
-    
+
 </head>
 <script language="JavaScript" src="#"></script>
+
 <body>
     <!-- Caixa de fundo -->
     <div class="caixa-principal">
@@ -25,43 +27,50 @@
                 Como você prefere redefinir sua senha?
                 <br> <br>
 
-            <div class="bolinha">
-                <input name="bola1" type="checkbox" id="bolinha">    
-                <label for="bolinha"></label>
-                <br>
-                <input type="checkbox" id="bolinha">    
-                <label for="bolinha"></label>
+                <div class="bolinha">
+                    <input type="checkbox" id="checkbox1" name="checkbox1" value="value1" />
+                    <label for="checkbox1"></label>
+                    <br>
+                    <input type="checkbox" id="checkbox2" name="checkbox2" value="value2" />
+                    <label for="checkbox2"></label>
+
+                </div>
 
                 <div class="Email">Email</div>
                 <div class="MensagemSMS">Mensagem de texto</div>
-            </div>
-            
-            <br>
-                    
-               
-
-
-                <div class="card-content">
-                    <div class="card-content-area">
-                        <label for="usuario">Enviaremos um email com as instruções de como redefinir sua senha</label>
-                        <br>
-                        <input type="text" id="usuario" autocomplete="off" placeholder="exemplo@exemplo">
-                    </div>
-                    
-                </div>
-                
-                <div class="card-footer">
-                    <input type="submit" value="Entrar" class="submit" onclick="Login()">
-                    <br>
-                    <a href="javascript:window.history.go(-1)" class="voltar">VOLTAR</a>
-                </div>
             </form>
+
+
+
         </div>
+
+        
+
+
+
+
+        <div class="card-content">
+            <div class="card-content-area">
+                <label for="usuario">Enviaremos um email com as instruções de como redefinir sua senha</label>
+                <br>
+                <input type="text" id="usuario" autocomplete="off" placeholder="exemplo@exemplo">
+            </div>
+
+        </div>
+
+        <div class="card-footer">
+            <input type="submit" value="Enviar" class="submit" onclick="Login()">
+            <br>
+            <a href="javascript:window.history.go(-1)" class="voltar">VOLTAR</a>
+        </div>
+        </form>
+    </div>
     </form>
     <!-- Container, dos login pelas redes socias.-->
-    
+
 </body>
 
-      
+
 </script>
+
 </html>

@@ -36,12 +36,12 @@ a:hover {
   border: solid 2px rgb(9, 41, 56);
 }
 
-form { /*div do formulario (senha e email) */
+form { 
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-label, /* cores da etiqueta(email e senha) */
+label, 
 input {
   display: block;
   width: 100%;
@@ -49,19 +49,19 @@ input {
   color: black;
 }
 
-label {  /* formatação etiqueta */
+label {  
   font-weight: bold;
   font-size: .8rem;
 }
 
-input {  /*linha do email e da senha */
+input {  
   border: 2px solid #323232;
   padding: 10px;
   font-size: 1rem;
   margin-bottom: 10px;
 }
 
-input:focus { /* hover da linha do email e da senha*/
+input:focus { 
   border: 2px solid rgb(150, 0, 0);
 }
 
@@ -82,6 +82,7 @@ input:focus { /* hover da linha do email e da senha*/
   background-color:  rgb(186, 0 , 1);
   font-weight: bold;
   font-size: 15px;
+  border: solid 1px rgb(88, 0, 0);;
 }
 
 .submit:hover{
@@ -106,38 +107,28 @@ input:focus { /* hover da linha do email e da senha*/
   color: #FFF;
   background-color: #000000;
 }
-/* Cabecalho(Texto) do login */
-.card-header{
-  display: flex;
-  font-size: 15px;
-  justify-content: center;
-}
-/* Textos acima do Input (Usuario/Senha) */
-.card-content label {
+.card-content label { /* texto 3 */
   color: black;
-  font-size: 12px;
+  font-size: 15px;
   opacity: 0.8;
 }
 
-/* Container do esqueceu a senha, do botao entrar, e do voltar. */
+/* Container do voltar */
 .card-footer{
   display: flex;
   flex-direction: column;
   height: 10%;
-}
-
-.recuperar_senha {
-  display : flex;
-  justify-content: right;
+  font-weight: bold;
+  color: #7c0000;
 }
 
 input[type="checkbox"] {
-    /* Esconde o checkbox padrão */
+    /* Esconde o checkbox(quadradinho) padrão */
     display: none;
   }
   
   
-  .bolinha label{
+  .bolinha label, .bolinha2 label{
     width: 100px;
     display: flex;
     width: 20px;
@@ -149,28 +140,32 @@ input[type="checkbox"] {
   }
   .Email{
     position: absolute;
-    left: 227px;
-    top: 206px;
+    left: 630px;
+    top: 210px;
   }
   
   .MensagemSMS{
     position: absolute;
-    left: 227px;
-    top: 247px;
+    left: 630px;
+    top: 250px;
   }
   
   input[type="checkbox"]:checked + label {
     /* Estilo da bolinha quando selecionada */
-    background-color: #7c0000;
+    background-color:  rgb(186, 0 , 1);;
   }
 
-  input[type="checkbox"]:checked + label {
+  input[type="checkbox2"]:checked + label {
     /* Estilo da bolinha quando selecionada */
-    background-color: #7c0000;
+    background-color:  rgb(186, 0 , 1);;
   }
 
  
-
+  .card
+  {
+    font-weight: bold;
+  }
+  
 
 
 
