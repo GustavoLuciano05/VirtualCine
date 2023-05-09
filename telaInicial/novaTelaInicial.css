@@ -13,21 +13,6 @@ body {
     
 }
 
-.desliza{
-    animation: deslizar 2s forwards;
-}
-@keyframes deslizar {
-    0%{ transform: translate(0%,-100%);}
-    100%{ transform: translate(0%,0%); z-index: 1;}
-}
-.sobe{
-    animation: subir 2s forwards;
-}
-@keyframes subir {
-    0%{ transform: translate(0%,0%);}
-    100%{ transform: translate(0%,-100%); z-index: -1;}
-}
-
 h2{
     border-bottom: 1px solid #A4161A;
     font-family: 'Cinzel', serif;
@@ -117,7 +102,7 @@ h2{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    z-index: 2;
+    z-index: 10;
    
 }
 
@@ -251,9 +236,11 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    z-index: 0;
     
 }
-.contentMetade2{z-index: -2;} 
+
+
 
 .containerAbaPrincipal{
     
@@ -398,6 +385,72 @@ a{
   
     
 }
+
+.containerSlides{
+    width: 98%;
+    
+    height: 98%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    z-index: 4;
+}
+
+.setaSlidesE,.setaSlidesD{
+    position: absolute;
+    font-size: 50px;
+    color : white;
+    cursor: pointer;
+   
+}
+
+.setaSlidesE:hover,.setaSlidesD:hover{
+    transform: scale(1.1);
+}
+
+.setaSlidesD {left: 95%; top: 50%}
+.setaSlidesE {left: 52%; top: 50%}
+
+.slidesCont{
+    width: 100%;
+    height: 10%;
+    
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 25%;
+}
+.slidesNum {
+    width: 5%;
+    margin: 1%;
+    height: 30%;
+    
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.2);   
+}
+
+.slidesImgs{
+    display: flex;
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    z-index: -1;
+    
+}
+
+.slidesImgs img{
+    position: relative;
+    object-fit: cover;
+}
+
+
+
+
+
 .d2
         {
             position: absolute;

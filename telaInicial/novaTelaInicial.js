@@ -62,26 +62,38 @@ function mostrarMenu(id,val){
 var leftAtual = 0;
 
 function voltarSlide(){
-    leftAtual-=100;
-    if(leftAtual <= 0){
+    leftAtual+=1024;
+    if(leftAtual >= 0){
         $("#setaSlidesE").css("display", "none");
     } else {
         $("#setaSlidesE").css("display", "block");
+    }
+    if(leftAtual <=-2048){
+        $("#setaSlidesD").css("display", "none");
+    } else {
+        $("#setaSlidesD").css("display", "block");
     }
 
     $("#slides").animate({left:leftAtual},500);
 }
 
 function avancarSlide(){
-    leftAtual+=100;
+    leftAtual-=1024;
      
     $("#slides").animate({left:leftAtual},500);
 
-    if(leftAtual <= 0){
+    if(leftAtual >= 0){
         $("#setaSlidesE").css("display", "none");
     } else {
         $("#setaSlidesE").css("display", "block");
     }
+
+    if(leftAtual <=-2048){
+        $("#setaSlidesD").css("display", "none");
+    } else {
+        $("#setaSlidesD").css("display", "block");
+    }
+    
 }
 
 
