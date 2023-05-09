@@ -48,14 +48,43 @@ function mostrarMenu(id,val){
 
     j++;
     if (j == 1)  {
-        $('#'+id).animate({top: val },1000);
+        $('#'+id).css('z-index',2);
+        $('#'+id).animate({top: val},1000);
         $('#'+id).siblings().animate({top: '0%'},500);
     }
     else { 
         $('#'+id).animate({top: '0%'},500);
         j = 0;
+        $('#'+id).css('z-index',1);
     } 
 }
+
+var leftAtual = 0;
+
+function voltarSlide(){
+    leftAtual-=100;
+    if(leftAtual <= 0){
+        $("#setaSlidesE").css("display", "none");
+    } else {
+        $("#setaSlidesE").css("display", "block");
+    }
+
+    $("#slides").animate({left:leftAtual},500);
+}
+
+function avancarSlide(){
+    leftAtual+=100;
+     
+    $("#slides").animate({left:leftAtual},500);
+
+    if(leftAtual <= 0){
+        $("#setaSlidesE").css("display", "none");
+    } else {
+        $("#setaSlidesE").css("display", "block");
+    }
+}
+
+
 function abrirTela(pasta,arquivo){
     let str = '../'+pasta+'/'+arquivo;
     location.href = str;
