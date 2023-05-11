@@ -197,7 +197,7 @@ input[type="radio"] {
       height: 10%;
      
       justify-content: space-around;
-      align-items: center;
+      /* align-items: center; */
     }
   
 
