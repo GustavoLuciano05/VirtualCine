@@ -358,26 +358,144 @@ a{
     font-size: 25px;
     font-family: 'Quicksand', sans-serif;
 }
-.containerFilmes{
+.containerPlanos{
     width: 100%;
-    height: 30%;
-    /* border: 4px solid #660708; */
+    height: 60%;
+
+    background-color: #0B090A;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    
+
+}
+.cabecalhoPlanos{
+    height: 20%;
+    width: 100%;
+    
+    display: flex;
     align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
+    font-family: 'Quicksand', sans-serif;
+    background-image: linear-gradient(to bottom, #161A1D,#0B090A );
+}
+.contentPlanos{
+    height: 60%;
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
 }
 .divFilmes{
     height: 100%;
     width: 20%;
     /* border: 2px solid #660708; */
-   
 }
+.planos{
+  
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planosTopo{
+    width: 100%;
+    height: 15%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif; 
+    color: #A4161A;
+    box-shadow: 1px 10px 5px black;
+    z-index: 2px;
+
+}
+.planosMetade{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.planosMetadeD{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.planosFundo{
+    width: 100%;
+    height: 15%;
+    
+    display: flex;
+}
+
+.planosDescricao{
+    background-color: #E5383B   ;
+    width: 100%;
+    height: 100%;
+}
+
+.quadPlanos{
+    width: 20%;
+    height: 90%;
+    background-color: white;
+    display: flex;
+}
+
+
+
+.fundoMetade,.fundoMetade2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.fundoMetade2{
+    background-color: #E5383B;
+}
+.fundoMetade{
+    background-color: #660708;
+    display: flex;
+    align-items: center;
+}
+.metadeButton{
+    width: 25%;
+    height: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #660708;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+
 
 .imgFilme{
     height: 100%;
     width: 100%;
     
+}
+h2{
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif; 
+    border: none;
+    font-weight: lighter;
 }
 
 .icone3d{
@@ -431,6 +549,13 @@ a{
     background-color: rgba(255, 255, 255, 0.2);   
 }
 
+h1{
+    font-size: 60px;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 2px solid #A4161A;
+    font-weight: lighter;
+}
+
 .slidesImgs{
     display: flex;
     position: relative;
@@ -446,6 +571,7 @@ a{
     position: relative;
     object-fit: cover;
 }
+
 
 
 
