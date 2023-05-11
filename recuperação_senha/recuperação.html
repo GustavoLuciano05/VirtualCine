@@ -12,7 +12,7 @@
     <title>Login</title>
 
 </head>
-<script language="JavaScript" src="#"></script>
+<script src="recuperacao.js"></script>
 
 <body>
     <!-- Caixa de fundo -->
@@ -28,23 +28,23 @@
                 <br> <br>
 
                 <div class="bolinha">
-                    <input type="checkbox" id="checkbox1" name="checkbox1" value="value1" />
-                    <label for="checkbox1"></label>
+                    <input class="radio" type="radio" id="checkbox1" name="radio" value="value1" />
+                    <label onchange="BolinhasDoidas(1);" onclick="MostrarCheckbox('Emailcaixa');" for="checkbox1"></label>
                     <br>
-                    <input type="checkbox" id="checkbox2" name="checkbox2" value="value2" />
-                    <label for="checkbox2"></label>
+                    <input class="radio" type="radio" id="checkbox2" name="radio" value="value2" />
+                    <label onchange="BolinhasDoidas(2);" onclick="MostrarCheckbox('MensagemSMS');" for="checkbox2"></label>
 
                 </div>
 
-                <div class="Email">Email</div>
-                <div class="MensagemSMS">Mensagem de texto</div>
+                <div class="Email" id="Emailcaixa">Email</div>
+                <div class="MensagemSMS" id="MensagemSMS">Mensagem de texto</div>
             </form>
 
 
 
         </div>
 
-        
+
 
 
 
@@ -53,7 +53,22 @@
             <div class="card-content-area">
                 <label for="usuario">Enviaremos um email com as instruções de como redefinir sua senha</label>
                 <br>
-                <input type="text" id="usuario" autocomplete="off" placeholder="exemplo@exemplo">
+                <input class="Emailcaixa" type="text" id="usuario" autocomplete="off" placeholder="exemplo@exemplo">
+                <div class="container">
+                    <div class="telefone" id="telefone"> 
+                        
+                        <input type="text" autocomplete="off" placeholder="(**) 00000-0000">
+                    </div>
+                    <div class="caixadabandeira">
+                        <input class="caixadabandeira2" type="text" id="bandeira" autocomplete="off">
+                        <img class="brasil" src="img/brasil.png" type="text" >
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="caixabranca" id="caixabranca">
+                <input class="caixabranca" type="text" id="usuario3" autocomplete="off">
             </div>
 
         </div>

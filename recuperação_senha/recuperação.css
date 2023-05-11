@@ -122,7 +122,7 @@ input:focus {
   color: #7c0000;
 }
 
-input[type="checkbox"] {
+input[type="radio"] {
     /* Esconde o checkbox(quadradinho) padrão */
     display: none;
   }
@@ -150,12 +150,12 @@ input[type="checkbox"] {
     top: 250px;
   }
   
-  input[type="checkbox"]:checked + label {
+  input[type="radio"]:checked + label {
     /* Estilo da bolinha quando selecionada */
     background-color:  rgb(186, 0 , 1);;
   }
 
-  input[type="checkbox2"]:checked + label {
+  input[type="radio"]:checked + label {
     /* Estilo da bolinha quando selecionada */
     background-color:  rgb(186, 0 , 1);;
   }
@@ -165,6 +165,40 @@ input[type="checkbox"] {
   {
     font-weight: bold;
   }
+  .telefone{
+    display: none;
+    width: 70%;
+    justify-content: left;
+  }
+  .Emailcaixa{
+    display: none;
+  }
+  .brasil
+  {
+    width: 25px;
+    height: 25px;
+    
+    left: 615px;
+    top: 360px;
+  }
+  .caixadabandeira
+  {
+    width: 60px;
+    height: 30px;
+    display: flex;
+   
+    margin-left: 10px;
+    
+    }
+
+    .container{
+      display: flex;
+      width: 90%;
+      height: 10%;
+     
+      justify-content: space-around;
+      align-items: center;
+    }
   
 
 
