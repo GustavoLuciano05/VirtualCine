@@ -8,7 +8,16 @@
     <title>Virtual Cine</title>
 </head>
 <body onload="VerificaBotoes()">
-    <div class="cabecalho">
+    <div class="menuPerfil" id="menuPerfil" >
+        <div class="perfilSel">Configurações</div>
+        <div class="perfilSel">Histórico</div>
+        <div class="perfilSel">Conta</div>
+        <div class="perfilSel">Fale Conosco</div>
+        <div class="perfilSel" onclick="FecharPerfil()">Sair</div>
+    </div>
+    
+
+    <div class="cabecalho" id="cabe">
         
         <div class="cabecalhoBorda" onclick="abrirTela('telaInicial','novaTelaInicial.html');">
             <div class="txtLogo">VIRTUAL CINE</div>
@@ -35,48 +44,43 @@
             <div class="cabecalhoLupa">
                 <img src="../img/Lupa-branca.webp" width="30px" id="btnBusca" alt="Buscar"/>
             </div>
-            <a href="#" onclick="mostrarMenu('perfil','62.5%');"><img src="../img/Perfil.png" width=45px class="cabecalhoPerfil"></a>
+            <a href="#" onclick="MostrarPerfil();"><img src="../img/Perfil.png" width=45px class="cabecalhoPerfil"></a>
         </div>
-    </div>
-    <div class="containerAbaPrincipal">
-        <div class="containerAba">
-            <!-- Categorias -->
-            <div class="categorias" id="categorias">
-                
-                <div class="contentAbas"><h2>Aventura </h2></div>
-                <div class="contentAbas"><h2>Terror</h2></div>
-                <div class="contentAbas"><h2>Ação</h2></div>
-                <div class="contentAbas"><h2>Romance</h2></div>
-                <div class="contentAbas"><h2>Comédia</h2></div>               
-            </div>
-            <!-- Destaques -->
-            <div class="destaques"id="destaques">
-                <div class="contentAbas"><h2>Gato de Botas 2</h2></div>
-                <div class="contentAbas"><h2>Mad Max</h2></div>
-                <div class="contentAbas"><h2>Enrolados</h2></div>
-                <div class="contentAbas"><h2>Titanic </h2></div>
-                <div class="contentAbas"><h2>Harry Potter</h2></div> 
-            </div>
-            <!-- Combos -->
-            <div class="combos"id="combos">
-                <div class="contentAbas"><h2>Burguer e CocaCola</h2></div>
-                <div class="contentAbas"><h2>Pastel e caldo de cana</h2></div>
-                <div class="contentAbas"><h2>Tacos e churros</h2></div>
-                <div class="contentAbas"><h2>Hot Dog e suco</h2></div>
-                <div class="contentAbas"><h2>Pizza e Vinho </h2></div> 
-            </div>
-        </div>
-            <div class="containerAba2">
-                <div class="perfil" id ="perfil">
-                    <div class="contentAbas">Configurações</div>
-                    <div class="contentAbas">Histórico</div>
-                    <div class="contentAbas">Conta</div>
-                    <div class="contentAbas">Fale Conosco</div>
-                    <div class="contentAbas"><a href="novaTelaInicial.html">Sair</a></div>
+        <div class="containerAbaPrincipal">
+            <div class="containerAba">
+                <!-- Categorias -->
+                <div class="categorias" id="categorias">
+                    
+                    <div class="contentAbas">Aventura </div>
+                    <div class="contentAbas">Terror</div>
+                    <div class="contentAbas">Ação</div>
+                    <div class="contentAbas">Romance</div>
+                    <div class="contentAbas">Comédia</div>               
+                </div>
+                <!-- Destaques -->
+                <div class="destaques"id="destaques">
+                    <div class="contentAbas">Gato de Botas 2</div>
+                    <div class="contentAbas">Mad Max</div>
+                    <div class="contentAbas">Enrolados</div>
+                    <div class="contentAbas">Titanic </div>
+                    <div class="contentAbas">Harry Potter</div> 
+                </div>
+                <!-- Combos -->
+                <div class="combos"id="combos">
+                    <div class="contentAbas">Burguer e CocaCola</div>
+                    <div class="contentAbas">Pastel e caldo de cana</div>
+                    <div class="contentAbas">Tacos e churros</div>
+                    <div class="contentAbas">Hot Dog e suco</div>
+                    <div class="contentAbas">Pizza e Vinho </div> 
                 </div>
             </div>
-            
+           
+        </div>
+
+       
     </div>
+
+    
     <div class="content">
         <div class="contentMetade">
             <div class="containerSlogan">
@@ -90,9 +94,7 @@
         </div>
         <div class="contentMetade2">
             <div class="containerSlides">
-                <div class="setaSlidesE" id="setaSlidesE" onclick="voltarSlide()"><</div>
-            
-                <div class="setaSlidesD" id="setaSlidesD"onclick="avancarSlide()">></div>
+               
                 
                     <div class="slidesImgs" id="slides">
                         <img src="../img/Virtual Cine.png" height="105%">
@@ -120,7 +122,12 @@
                     </div>
                     
                     <div class="planosMetade">
-                        <div class="planosMetadeD"></div>
+                        <div class="planosMetadeD">
+                            <div class="quadPlanos"></div>
+                            <div class="quadPlanos"></div>
+                            <div class="quadPlanos"></div>
+                            <div class="quadPlanos"></div>
+                        </div>
                         <div class="planosMetadeD">
                             <div class="planosDescricao"></div>
                         </div>

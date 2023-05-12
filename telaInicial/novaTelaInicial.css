@@ -10,6 +10,7 @@ body {
     height: 200vh;
     display: flex;
     flex-direction: column;
+ 
     
 }
 
@@ -36,7 +37,7 @@ h2{
 }
 
 .txtBotoes , .txtBotoesC{
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Cinzel', sans-serif;
     cursor: pointer;
     color: white;
@@ -49,7 +50,7 @@ h2{
 }
 
 .txtBotoes:hover,.txtBotoesC:hover{
-    font-size: 17.5px;
+    font-size: 25px;
     color:  #A4161A;
 }
 
@@ -96,13 +97,18 @@ h2{
         /* Cabeçalho */
 .cabecalho{
     width: 100%;
-    height: 10%;
+    height: 20%;
+    position: fixed;
     background-color: #0B090A;
-    border-bottom: 5px solid #A4161A;
+    margin-bottom: 20%;
+    background-image: linear-gradient(to bottom,#0b090a,#161a1d);
+    
+    z-index: 10;
+    
     display: flex;
     justify-content: space-around;
     text-align: center;
-    z-index: 10;
+    
    
 }
 
@@ -114,7 +120,7 @@ a{
 .cabecalhoBorda{
     width: 25%;
     /* border: 3px solid #A4161A; */
-
+    
     display: flex;
     align-items: center;
 }
@@ -134,7 +140,7 @@ a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-   
+    
 }
 /* Os botoes do cabeçalho */
 .cabecalhoBotoes{
@@ -142,7 +148,7 @@ a{
     width: 25%;
 
    
-    font-size:15px;
+    font-size:20px;
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
     text-align: center;
@@ -227,6 +233,7 @@ a{
     flex-direction: row;
     width: 100%;
     height: 35%;
+    margin-top: 10%;
 }
 .contentMetade,.contentMetade2{
  
@@ -237,6 +244,10 @@ a{
     flex-direction: column;
     justify-content: space-around;
     z-index: 0;
+    
+    
+    position: relative;
+   
     
 }
 
@@ -251,14 +262,15 @@ a{
     display: flex;
     justify-content: space-around;
     margin-top: 9%;
-   
-   
+    z-index: -1;
+
    
 }
 .containerAba,.containerAba2{
-    position: absolute;
+    
+
     width: 33%;
-    height: 50%;
+    height: 40%;
     /* border: 2px solid #660708; */
     
     display: flex;
@@ -268,7 +280,7 @@ a{
 .containerAba2{
     right: 1%;
     /* border: 2px solid #660708; */
-
+    
     justify-content: right;
     
 }
@@ -285,9 +297,9 @@ a{
 #categorias,.destaques,.combos{
     height: 100%;
     width: 25%;
-    background-color: white;
+    position: absolute;
     
-    display: flex;
+    opacity: 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -297,12 +309,13 @@ a{
 }
 .contentAbas{
     width: 100%;
-    height: 20%;
+    height: 100%;
     border-left: 5px solid #A4161A;
     box-shadow:  0px 0px 4px 0px #000000;
     background-color: white;
-    
+   
     display: flex;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -468,20 +481,27 @@ a{
     background-color: #660708;
     display: flex;
     align-items: center;
+    
 }
 .metadeButton{
-    width: 25%;
-    height: 50%;
+    width: 35%;
+    height: 100%;
     
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
     color: #660708;
-    border-radius: 10px;
+    
     color: white;
     font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    transition: .4s;
+    border: #0B090A;
     
+}
+.metadeButton:hover{
+    background-color: #A4161A;
 }
 
 
@@ -572,9 +592,42 @@ h1{
     object-fit: cover;
 }
 
+.menuPerfil{
+ 
+    width: 100vw;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    backdrop-filter: blur(10px);
+    z-index: 14;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
 
-
-
+   
+}
+.perfilSel{
+    color: white;
+    width: 12%;
+    font-weight: lighter;
+    padding-left: 1%;
+    height: 10%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+   
+    transition: 1s;
+}
+.perfilSel:hover{
+    transition: .1s;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.7) ;
+    /* border-bottom: 1px solid white; */
+    
+}
 
 
 .d2
