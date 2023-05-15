@@ -141,16 +141,12 @@ input[type="radio"] {
   }
   .Email{
     position: absolute;
-    left: 560px;
-    top: 203px;
     left: 630px;
     top: 210px;
   }
   
   .MensagemSMS{
     position: absolute;
-    left: 560px;
-    top: 243px;
     left: 630px;
     top: 250px;
   }
@@ -171,80 +167,61 @@ input[type="radio"] {
     font-weight: bold;
   }
   .telefone{
-    
-    display:  none;
+    display: none;
     width: 70%;
     justify-content: left;
   }
   .Emailcaixa{
     display: none;
   }
-  .brasil
-  {
-    width: 17px;
-    height: 17px;
-  }
-  .caixadabandeira
-  {
-    width: 40px;
-    height: 43.5px;
-    display: flex;
-    margin-top: -53px;
-    align-items: center;
-    justify-content: center;    
-    }
-    
-    .Emailcaixa{
-    width: 25px;
-    height: 25px;
-    left: 615px;
-    top: 360px;
-  }
-
+  
     .container{
       display: flex;
       width: 90%;
       height: 10%;
       justify-content: space-around;
     }
-    .card-content-area input
+    .caixa_telefone{
+      margin-left: 30%;
+    }
+    .bandeiraemenor
     {
-      margin-left: 80px;
+      width: 100px;
+      height: 44px;
+      margin-left: -43px;
+      margin-top: -54px;
+      flex-direction: row;
+      display: flex;
     }
-    .card-content-area input#usuario.Emailcaixa{
-      margin-left: 0px;
-      border: solid 2px rgb(88, 85, 85);
+    .caixadabandeira
+  {
+    width: 48%;
+    height: 44px;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
     }
-    .card-content-area input#telefoneid{
-      border: solid 2px #ccc;
-    }
-    .sinal-de-menor
+    .sinalmenor
     {
-      border: solid 2px #ccc;
-      height: 43px;
-      width:30px;
-      margin-left: 40px;
-      margin-top: -43px ;
+      width: 50%;
+      height: 44px;
+      display: flex;
       align-items: center;
       justify-content: center;
       justify-items: center;
-      flex-direction: row;
     }
-    .card-content-area input#usuario3.caixabranca
-    {
-      margin-left: 0px;
+    .bandeiraemenor:hover{
+      border: solid 2px  #323232;
     }
-    .sinal-de-menor-img{
-      width: 10px;
-      margin-bottom: -8px;
+    .img_sinalmenor{
+      width: 30px;
+      height: 30px;
       cursor: pointer;
     }
-    .caixadabandeira :hover
-    {
-     border: solid 2px #ccc;
+    .img_brasil{
+      width: 25px;
+      height: 25px;
     }
-    
-  
-
 
 

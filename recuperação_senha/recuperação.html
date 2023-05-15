@@ -56,48 +56,40 @@
                 <label for="usuario">Enviaremos um email com as instruções de como redefinir sua senha</label>
                 <br>
                 <input class="Emailcaixa" type="text" id="usuario" autocomplete="off" placeholder="exemplo@exemplo">
+                <div class="container">
+                    <div class="telefone" id="telefone">
 
-                <div class="telefone" id="telefone">
-
-                    <input type="text" id="telefoneid" autocomplete="off" placeholder="(**) 00000-0000">
-                    <div class="caixadabandeira">
-                        <img class="brasil" src="img/brasil.png">
-                    </div>
-                    <div class="sinal-de-menor">
-                        <img class="sinal-de-menor-img" src="./img/sinaldemenor.png">
-                    </div>
-
-
-                    <div class="container">
-                        <div class="telefone" id="telefone">
-
-                            <input type="text" autocomplete="off" placeholder="(**) 00000-0000">
-                        </div>
-                        <div class="caixadabandeira">
-                            <input class="caixadabandeira2" type="text" id="bandeira" autocomplete="off">
-                            <img class="brasil" src="img/brasil.png" type="text">
+                        <input class="caixa_telefone" type="text" autocomplete="off" placeholder="(**) 00000-0000">
+                        <div class="bandeiraemenor">
+                            <div class="caixadabandeira">
+                                <img class="img_brasil" src="img/brasil.png">
+                            </div>
+                            <div class="sinalmenor">
+                                <img class="img_sinalmenor" src="./img/sinaldemenor-removebg-preview.png">
+                            </div>
                         </div>
                     </div>
 
-
-                </div>
-
-                <div class="caixabranca" id="caixabranca">
-                    <input class="caixabranca" type="text" id="usuario3" autocomplete="off">
                 </div>
 
             </div>
 
-            <div class="card-footer">
-                <input type="submit" value="Enviar" class="submit" onclick="Login()">
-                <br>
-                <a href="recuperacao.js" class="voltar">VOLTAR</a>
+            <div class="caixabranca" id="caixabranca">
+                <input class="caixabranca" type="text" id="usuario3" autocomplete="off">
             </div>
-            </form>
+
+        </div>
+
+        <div class="card-footer">
+            <input type="submit" value="Enviar" class="submit" onclick="Login()">
+            <br>
+            <a href="javascript:window.history.go(-1)" class="voltar">VOLTAR</a>
         </div>
         </form>
-        <!-- Container, dos login pelas redes socias.-->
     </div>
+    </form>
+    <!-- Container, dos login pelas redes socias.-->
+
 </body>
 
 
