@@ -60,22 +60,8 @@
 
 
         <div class="card-content">
-            <div class="paises">
-                <div class="pais"> <img src="./img/argentina.png" width="25px" height="25px"></div>
-                <div class="pais"> <img src="./img/argentina.png" width="25px" height="25px"></div>
-                <div class="pais"> <img src="./img/argentina.png" width="25px" height="25px"></div>
-                <div class="pais"> <img src="./img/argentina.png" width="25px" height="25px"></div>
-                <div class="pais"> <img src="./img/argentina.png" width="25px" height="25px"></div>
-                <div class="pais"> <img src="./img/argentina.png" width="25px" height="25px"></div>
-                <div class="pais"> <img src="./img/argentina.png" width="25px" height="25px"></div>
-                <div class="pais"> <img src="./img/argentina.png" width="25px" height="25px"></div>
-                <div class="pais"> <img src="./img/argentina.png" width="25px" height="25px"></div>
-                <div class="pais"> <img src="./img/argentina.png" width="25px" height="25px"></div>
-                <div class="pais"> <img src="./img/argentina.png" width="25px" height="25px"></div>
-                <div class="pais"> <img src="./img/argentina.png" width="25px" height="25px"></div>
+            
 
-
-            </div>
             <div class="card-content-area">
                 <label for="usuario">Enviaremos um email com as instruções de como redefinir sua senha</label>
                 <br>
@@ -86,18 +72,32 @@
                         <input class="caixa_telefone" type="text" autocomplete="off" placeholder="(**) 00000-0000">
                         <div class="bandeiraemenor">
                             <div class="caixadabandeira">
-                                <img class="img_brasil" src="img/brasil.png">
+                                <img class="img_brasil" src="img/brasil.png" id="troca-bandeiras">
                             </div>
                             <div class="sinalmenor">
-                                <img class="img_sinalmenor" src="./img/sinaldemenor-removebg-preview.png">
+                                <img class="img_sinalmenor" src="./img/sinaldemenor-removebg-preview.png" onclick="exibirBandeiras()">
 
                                 
                             </div>
+                            
+                
                         </div>
                     </div>
 
                 </div>
-
+                <div class="paises" type="checkbox" id="lista-bandeiras" onclick="trocaBandeiras()">
+                    <div class="pais"> <img src="./img/brasil.png" width="25px" height="25px">‎ Brasil (+55)</div>
+                    <div class="pais"> <img src="./img/argentina.png" width="25px" height="25px">‎ Argentina (+54)</div>
+                    <div class="pais"> <img src="./img/bolívia.png" width="25px" height="25px">‎ Bolívia (+591)</div>
+                    <div class="pais"> <img src="./img/chile.png" width="25px" height="25px">‎ Chile (+56)</div>
+                    <div class="pais"> <img src="./img/colombia.png" width="25px" height="25px">‎ Colombia (+57)</div>
+                    <div class="pais"> <img src="./img/equador.png" width="25px" height="25px">‎ Equador (+593)</div>
+                    <div class="pais"> <img src="./img/Guiana.png" width="25px" height="25px">‎ Guiana (+592)</div>
+                    <div class="pais"> <img src="./img/paraguai.png" width="25px" height="25px">‎ Paraguai (+595)</div>
+                    <div class="pais"> <img src="./img/peru.png" width="25px" height="25px">‎ Peru (+51)</div>
+                    <div class="pais"> <img src="./img/suriname.png" width="25px" height="25px">‎ Suriname (+597)</div>
+                    <div class="pais"> <img src="./img/uruguai.png" width="25px" height="25px">‎ Uruguai (+598)</div>
+                    <div class="pais"> <img src="./img/venezuela.png" width="25px" height="25px">‎ Venezuela (+58)</div>
             </div>
 
             <div class="caixabranca" id="caixabranca">
@@ -120,5 +120,5 @@
 
 
 </script>
-
+<script src="../jquery-3.6.4.min.js"></script>
 </html>
