@@ -69,14 +69,13 @@
                 <div class="container">
                     <div class="telefone" id="telefone">
 
-                        <input class="caixa_telefone" type="text" autocomplete="off" placeholder="(**) 00000-0000">
+                        <input class="caixa_telefone" id="dddPais"  type="text" autocomplete="off" placeholder="(**) 00000-0000">
                         <div class="bandeiraemenor">
                             <div class="caixadabandeira">
-                                <img class="img_brasil" src="img/brasil.png" id="troca-bandeiras">
+                                <img class="bandeira" alt="bandeira" src="img/brasil.png" id="trocaBandeira">
                             </div>
                             <div class="sinalmenor">
                                 <img class="img_sinalmenor" src="./img/sinaldemenor-removebg-preview.png" onclick="exibirBandeiras()">
-
                                 
                             </div>
                             
@@ -85,19 +84,19 @@
                     </div>
 
                 </div>
-                <div class="paises" type="checkbox" id="lista-bandeiras" onclick="trocaBandeiras()">
-                    <div class="pais"> <img src="./img/brasil.png" width="25px" height="25px">‎ Brasil (+55)</div>
-                    <div class="pais"> <img src="./img/argentina.png" width="25px" height="25px">‎ Argentina (+54)</div>
-                    <div class="pais"> <img src="./img/bolívia.png" width="25px" height="25px">‎ Bolívia (+591)</div>
-                    <div class="pais"> <img src="./img/chile.png" width="25px" height="25px">‎ Chile (+56)</div>
-                    <div class="pais"> <img src="./img/colombia.png" width="25px" height="25px">‎ Colombia (+57)</div>
-                    <div class="pais"> <img src="./img/equador.png" width="25px" height="25px">‎ Equador (+593)</div>
-                    <div class="pais"> <img src="./img/Guiana.png" width="25px" height="25px">‎ Guiana (+592)</div>
-                    <div class="pais"> <img src="./img/paraguai.png" width="25px" height="25px">‎ Paraguai (+595)</div>
-                    <div class="pais"> <img src="./img/peru.png" width="25px" height="25px">‎ Peru (+51)</div>
-                    <div class="pais"> <img src="./img/suriname.png" width="25px" height="25px">‎ Suriname (+597)</div>
-                    <div class="pais"> <img src="./img/uruguai.png" width="25px" height="25px">‎ Uruguai (+598)</div>
-                    <div class="pais"> <img src="./img/venezuela.png" width="25px" height="25px">‎ Venezuela (+58)</div>
+                <div class="paises" id="lista-bandeiras">
+                    <div class="pais1"  type="checkbox"  onclick="trocarBandeiras('./img/brasil.png', '1', '+55');"> <img src="./img/brasil.png" alt="brasil" width="25px" height="25px" id="1">‎ Brasil (+55)</div>
+                    <div class="pais"  type="checkbox"  onclick="trocarBandeiras('./img/argentina.png', '2', '+54');"> <img src="./img/argentina.png" alt="argentina" width="25px" height="25px" id="2">‎ Argentina (+54)</div>
+                    <div class="pais"  type="checkbox"  onclick="trocarBandeiras('./img/bolivia.png', '3', '+591');" > <img src="./img/bolivia.png" alt="bolivia" width="25px" height="25px" id="3">‎ Bolívia (+591)</div>
+                    <div class="pais"  type="checkbox"  onclick="trocarBandeiras('./img/chile.png','4', '+56');"> <img src="./img/chile.png" alt="chile" width="25px" height="25px" id="4">‎ Chile (+56)</div>
+                    <div class="pais"  type="checkbox"  onclick="trocarBandeiras('./img/colombia.png','5', '+57');"> <img src="./img/colombia.png" alt="colombia" width="25px" height="25px" id="5">‎ Colombia (+57)</div>
+                    <div class="pais"  type="checkbox"  onclick="trocarBandeiras('./img/equador.png','6', '+593');"> <img src="./img/equador.png" alt="equador" width="25px" height="25px" id="6">‎ Equador (+593)</div>
+                    <div class="pais"  type="checkbox"  onclick="trocarBandeiras('./img/Guiana.png','7', '+592');"> <img src="./img/Guiana.png" alt="guiana" width="25px" height="25px" id="7">‎ Guiana (+592)</div>
+                    <div class="pais"  type="checkbox"  onclick="trocarBandeiras('./img/paraguai.png','8', '+595');"> <img src="./img/paraguai.png" alt="paraguai" width="25px" height="25px" id="8">‎ Paraguai (+595)</div>
+                    <div class="pais"  type="checkbox"  onclick="trocarBandeiras('./img/peru.png','9', '+51');"> <img src="./img/peru.png" alt="peru" width="25px" height="25px" id="9">‎ Peru (+51)</div>
+                    <div class="pais"  type="checkbox"  onclick="trocarBandeiras('./img/suriname.png','10', '+597');"> <img src="./img/suriname.png" alt="suriname"  width="25px" height="25px" id="10">‎ Suriname (+597)</div>
+                    <div class="pais"  type="checkbox"  onclick="trocarBandeiras('./img/uruguai.png','11', '+598');"> <img src="./img/uruguai.png" alt="uruguai" width="25px" height="25px" id="11">‎ Uruguai (+598)</div>
+                    <div class="pais"  type="checkbox"  onclick="trocarBandeiras('./img/venezuela.png','12', '+58');"> <img src="./img/venezuela.png" alt="venezuela" width="25px" height="25px" id="12">‎ Venezuela (+58)</div>
             </div>
 
             <div class="caixabranca" id="caixabranca">

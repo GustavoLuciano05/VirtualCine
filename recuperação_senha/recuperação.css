@@ -29,7 +29,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   width: 400px;
-   padding: 20px 30px;
+  padding: 20px 30px;
   margin-top: 10vh; 
   border-radius: 8px;
   text-align: center;
@@ -226,7 +226,7 @@ input[type="radio"] {
       height: 30px;
       cursor: pointer;
     }
-    .img_brasil{
+    .bandeira{
       width: 25px;
       height: 25px;
     }
@@ -246,11 +246,37 @@ input[type="radio"] {
       padding: 5px;
       color: rgb(56, 50, 50);
       font-family: 'Quicksand', sans-serif;
+      cursor: pointer;
+      border: solid 2px  #ffffff;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+    
+    .pais1{
+      width: 100%;
+      height: 39px;
+      display: flex;
+      padding: 5px;
+      color: rgb(56, 50, 50);
+      font-family: 'Quicksand', sans-serif;
+      cursor: pointer;
+      border: solid 2px  #000000;
+      border-top: none;
+      border-left: none;
+      border-right: none;
     }
     .pais:hover
     {
       background-color: rgb(97, 160, 255);
-    }
+      border-bottom: 2px solid rgb(255, 255, 255);
 
+    }
+    .pais1:hover
+    {
+      background-color: rgb(97, 160, 255);
+      border-bottom: 2px solid rgb(0, 97, 37);
+    }
+    
 
 
